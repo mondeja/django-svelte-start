@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Django + Svelte app</title>
+
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <script defer src="/js/bundle.js"></script>
+
+    {# Render a json/application script with id 'app-props' with its content #}
+    {# being the 'props' attribute of the context #}
+    {{props|json_script:'app-props'}}
+  </head>
+  <body></body>
+</html>
