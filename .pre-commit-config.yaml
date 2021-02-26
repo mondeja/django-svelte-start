@@ -47,3 +47,8 @@ repos:
     hooks:
       - id: prettier
         exclude: ^frontend/dist/
+  - repo: https://github.com/eslint/eslint
+    rev: v7.20.0
+    hooks:
+      - id: eslint
+        exclude: ^frontend/dist/
