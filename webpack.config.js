@@ -11,8 +11,8 @@ const PROD = MODE === "production";
 const buildEntries = function () {
   const entries = {},
     modulesPath = "./frontend/src/js",
-    files = fs.readdirSync(modulesPath).filter((f) => f.endsWith(".js"));
-  for (const f of files) {
+    moduleFiles = fs.readdirSync(modulesPath).filter((f) => f.endsWith(".js"));
+  for (const f of moduleFiles) {
     entries[f.split(".")[0]] = `${modulesPath}/${f}`;
   }
   return entries;
