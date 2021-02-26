@@ -4,3 +4,7 @@ node_modules/
 *.sqlite3
 *.log
 venv/
+/frontend/dist/js/*
+/frontend/dist/css/*
+!/frontend/dist/js/.keep
+!/frontend/dist/css/.keep
