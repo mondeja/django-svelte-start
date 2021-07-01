@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/mondeja/django-svelte-start#readme",
   "devDependencies": {
-    "autoprefixer": "10.2.4",
+    "autoprefixer": "10.2.6",
     "css-loader": "5.1.0",
     "eslint": "7.20.0",
     "mini-css-extract-plugin": "1.3.8",
