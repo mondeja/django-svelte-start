@@ -29,7 +29,7 @@
     "mini-css-extract-plugin": "2.0.0",
     "normalize.css": "8.0.1",
     "postcss-loader": "6.1.1",
-    "postcss-normalize": "9.0.0",
+    "postcss-normalize": "10.0.0",
     "postcss-preset-env": "6.7.0",
     "prettier": "2.3.2",
     "svelte": "3.38.3",
