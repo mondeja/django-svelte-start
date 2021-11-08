@@ -24,18 +24,18 @@
   "homepage": "https://github.com/mondeja/django-svelte-start#readme",
   "devDependencies": {
     "autoprefixer": "10.2.6",
-    "css-loader": "5.2.6",
-    "eslint": "7.29.0",
+    "css-loader": "5.2.7",
+    "eslint": "8.2.0",
     "mini-css-extract-plugin": "2.4.4",
     "normalize.css": "8.0.1",
-    "postcss-loader": "6.1.1",
-    "postcss-normalize": "10.0.0",
+    "postcss-loader": "6.2.0",
+    "postcss-normalize": "10.0.1",
     "postcss-preset-env": "6.7.0",
-    "prettier": "2.3.2",
+    "prettier": "2.4.1",
     "svelte": "3.38.3",
     "svelte-loader": "3.1.2",
     "webpack": "5.41.1",
-    "webpack-cli": "4.7.2"
+    "webpack-cli": "4.9.1"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
