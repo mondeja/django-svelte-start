@@ -31,7 +31,7 @@
     "postcss-loader": "6.2.0",
     "postcss-normalize": "10.0.0",
     "postcss-preset-env": "6.7.0",
-    "prettier": "2.3.2",
+    "prettier": "2.4.1",
     "svelte": "3.38.3",
     "svelte-loader": "3.1.2",
     "webpack": "5.41.1",
