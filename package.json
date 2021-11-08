@@ -35,7 +35,7 @@
     "svelte": "3.38.3",
     "svelte-loader": "3.1.2",
     "webpack": "5.41.1",
-    "webpack-cli": "4.7.2"
+    "webpack-cli": "4.9.1"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
