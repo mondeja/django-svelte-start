@@ -3,6 +3,7 @@ node_modules/
 *.pyc
 *.sqlite3
 *.log
+*.egg-info
 venv/
 /frontend/dist/js/*
 /frontend/dist/css/*
