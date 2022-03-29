@@ -1,6 +1,6 @@
 {
   "name": "django-svelte-start",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Django + Svelte starting template.",
   "main": "frontend/index.js",
   "scripts": {

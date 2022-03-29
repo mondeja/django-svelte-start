@@ -39,6 +39,6 @@ npm run build:watch
 python3 manage.py runserver
 ```
 
-Then http://127.0.0.1:8000/ on your browser.
+Then go to http://127.0.0.1:8000/ on your browser.
 
 > Make sure that you've activated the Python virtual environment before!
