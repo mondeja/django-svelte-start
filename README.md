@@ -31,7 +31,14 @@ python3 manage.py migrate
 
 Open two terminals and run these commands (one in each terminal):
 
-- `npm run build:watch`
-- `python3 manage.py runserver`
+```sh
+npm run build:watch
+```
+
+```sh
+python3 manage.py runserver
+```
+
+Then http://127.0.0.1:8000/ on your browser.
 
 > Make sure that you've activated the Python virtual environment before!

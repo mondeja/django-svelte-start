@@ -1,7 +1,6 @@
 from django.conf import settings
-from django.conf.urls import url
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
 from django.views.generic import TemplateView
 from django.views.static import serve
 
@@ -19,7 +18,7 @@ urlpatterns = [
     # Admin
     path("admin/", admin.site.urls),
     # Stylesheets
-    url(
+    re_path(
         r"^css/(?P<path>.*)$",
         serve,
         {
@@ -27,7 +26,7 @@ urlpatterns = [
         },
     ),
     # Javascript
-    url(
+    re_path(
         r"^js/(?P<path>.*)$",
         serve,
         {
@@ -35,7 +34,7 @@ urlpatterns = [
         },
     ),
     # Images
-    url(
+    re_path(
         r"^img/(?P<path>.*)$",
         serve,
         {

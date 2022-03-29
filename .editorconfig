@@ -10,5 +10,5 @@ indent_style=space
 indent_size=unset
 indent_style=space
 
-[*.py]
+[*.{py,cfg}]
 indent_size=4
