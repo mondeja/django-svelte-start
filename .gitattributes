@@ -1,0 +1,12 @@
+*                  text=auto
+
+# Don't diff machine generated files
+package-lock.json  -diff
+
+# Treat images as binary
+*.ico              binary
+*.png              binary
+
+# Don't export/archive these files
+.github            export-ignore
+CNAME              export-ignore
