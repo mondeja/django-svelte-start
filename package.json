@@ -1,8 +1,9 @@
 {
   "name": "django-svelte-start",
-  "version": "0.1.0",
-  "description": "Django + Svelte starting template.",
-  "main": "frontend/index.js",
+  "version": "0.2.0",
+  "description": "Django + Svelte starting template",
+  "main": "frontend/src/js/index.js",
+  "type": "module",
   "scripts": {
     "build": "NODE_ENV=development webpack",
     "build:prod": "NODE_ENV=production webpack",
@@ -23,44 +24,17 @@
   },
   "homepage": "https://github.com/mondeja/django-svelte-start#readme",
   "devDependencies": {
-    "autoprefixer": "10.4.4",
-    "css-loader": "6.7.1",
-    "eslint": "8.12.0",
-    "mini-css-extract-plugin": "2.6.0",
+    "autoprefixer": "10.4.18",
+    "css-loader": "6.10.0",
+    "eslint": "8.57.0",
+    "mini-css-extract-plugin": "2.8.1",
     "normalize.css": "8.0.1",
-    "postcss-loader": "6.2.1",
+    "postcss-loader": "8.1.1",
     "postcss-normalize": "10.0.1",
-    "postcss-preset-env": "7.4.3",
-    "prettier": "2.6.1",
-    "svelte": "3.49.0",
-    "svelte-loader": "3.1.2",
-    "webpack": "5.70.0",
-    "webpack-cli": "4.9.2"
-  },
-  "eslintConfig": {
-    "extends": "eslint:recommended",
-    "env": {
-      "browser": true,
-      "node": true,
-      "es6": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 6,
-      "sourceType": "module"
-    },
-    "rules": {
-      "linebreak-style": [
-        2,
-        "unix"
-      ],
-      "no-mixed-spaces-and-tabs": 2,
-      "indent": [
-        "error",
-        2
-      ],
-      "curly": 2,
-      "spaced-comment": 2
-    }
-  },
-  "browserslist": "last 2 versions"
+    "postcss-preset-env": "9.5.0",
+    "svelte": "4.2.12",
+    "svelte-loader": "3.1.9",
+    "webpack": "5.90.3",
+    "webpack-cli": "5.1.4"
+  }
 }

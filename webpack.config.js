@@ -1,29 +1,27 @@
 "use strict";
 
-const fs = require("fs");
-const path = require("path");
-
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+import fs from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from 'node:url';
+import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 const MODE = process.env.NODE_ENV || "development";
 const PROD = MODE === "production";
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const buildEntries = function () {
+const buildEntries = async () => {
   const entries = {},
     modulesPath = "./frontend/src/js",
-    moduleFiles = fs.readdirSync(modulesPath).filter((f) => f.endsWith(".js"));
+    moduleFiles = (await fs.readdir(modulesPath)).filter((f) => f.endsWith(".js"));
   for (const f of moduleFiles) {
     entries[f.split(".")[0]] = `${modulesPath}/${f}`;
   }
   return entries;
 };
 
-module.exports = {
-  entry: buildEntries(),
+export default {
+  entry: await buildEntries(),
   resolve: {
-    alias: {
-      svelte: path.dirname(require.resolve("svelte/package.json")),
-    },
     extensions: [".mjs", ".js", ".svelte", ".scss"],
     mainFields: ["svelte", "browser", "module", "main"],
   },
