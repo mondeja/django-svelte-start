@@ -1,0 +1,46 @@
+[project]
+name = "django-svelte-start"
+version = "0.2.0"
+description = "Django + Svelte starting template"
+readme = "README.md"
+license = "BSD-3-Clause"
+requires-python = ">=3.8"
+keywords = ["django", "svelte", "template", "start"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = ["Django>=5.0"]
+
+[[project.authors]]
+name = "Álvaro Mondéjar Rubio"
+email = "mondejar1994@gmail.com"
+
+[project.urls]
+Source = "https://github.com/mondeja/django-svelte-start"
+Documentation = "https://github.com/mondeja/django-svelte-start#readme"
+"Bug tracker" = "https://github.com/mondeja/django-svelte-start/issues"
+Changelog = "https://github.com/mondeja/django-svelte-start/releases"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["backend"]
+
+[tool.ruff]
+line-length = 80
+target-version = "py38"

@@ -5,6 +5,7 @@ node_modules/
 *.log
 *.egg-info
 venv/
+.ruff_cache/
 /frontend/dist/js/*
 /frontend/dist/css/*
 !/frontend/dist/js/.keep

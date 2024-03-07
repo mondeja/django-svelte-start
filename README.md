@@ -2,26 +2,26 @@
 
 ## Development environment setup
 
-1. Create a virtual environment and activate it:
+Create a virtual environment and activate it:
 
 ```bash
 python3 -m virtualenv venv && . venv/bin/activate
 ```
 
-2. Install Python development requirements:
+Install Python development requirements:
 
 ```bash
-python3 -m pip install .[dev]
+python3 -m pip install . pre-commit
 pre-commit install
 ```
 
-3. Install NodeJS requirements:
+Install NodeJS requirements:
 
 ```bash
 npm install
 ```
 
-4. Process initial migrations:
+Process initial migrations:
 
 ```bash
 python3 manage.py migrate
@@ -39,6 +39,4 @@ npm run build:watch
 python3 manage.py runserver
 ```
 
-Then go to http://127.0.0.1:8000/ on your browser.
-
-> Make sure that you've activated the Python virtual environment before!
+Then go to [http://127.0.0.1:8000](http://127.0.0.1:8000/) on your browser.

@@ -15,8 +15,10 @@ urlpatterns = [
         ),
         name="home",
     ),
+
     # Admin
     path("admin/", admin.site.urls),
+
     # Stylesheets
     re_path(
         r"^css/(?P<path>.*)$",
@@ -25,7 +27,8 @@ urlpatterns = [
             "document_root": settings.BASE_DIR / "frontend" / "dist" / "css",
         },
     ),
-    # Javascript
+
+    # Javascripts
     re_path(
         r"^js/(?P<path>.*)$",
         serve,
@@ -33,6 +36,7 @@ urlpatterns = [
             "document_root": settings.BASE_DIR / "frontend" / "dist" / "js",
         },
     ),
+
     # Images
     re_path(
         r"^img/(?P<path>.*)$",
