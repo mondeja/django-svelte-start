@@ -22,11 +22,6 @@ const buildEntries = async () => {
 export default {
   entry: await buildEntries(),
   resolve: {
-    /*
-    alias: {
-      svelte: path.dirname(require.resolve("svelte/package.json")),
-    },
-    */
     extensions: [".mjs", ".js", ".svelte", ".scss"],
     mainFields: ["svelte", "browser", "module", "main"],
   },
