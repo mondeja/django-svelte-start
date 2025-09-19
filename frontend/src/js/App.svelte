@@ -4,4 +4,4 @@
   export let name;
 </script>
 
-<Main name={name}/>
+<Main {name}/>

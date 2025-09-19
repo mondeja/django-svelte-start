@@ -1,5 +1,13 @@
 # django-svelte-start
 
+Modern starter template for Django + Svelte projects. It includes:
+
+- ESBuild for building Svelte frontend.
+- Live reload for backend and frontend.
+- Prettier and ESLint for code formatting and linting.
+- Prek for automatic code checks.
+- Hatch for backend build system.
+
 ## Development environment setup
 
 Create a virtual environment and activate it:
