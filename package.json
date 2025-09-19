@@ -5,9 +5,9 @@
   "main": "frontend/src/js/index.js",
   "type": "module",
   "scripts": {
-    "build": "NODE_ENV=development node build.js",
-    "build:prod": "NODE_ENV=production node build.js",
-    "build:watch": "NODE_ENV=development node build.js --watch",
+    "build": "NODE_ENV=development node frontend/build.js",
+    "build:prod": "NODE_ENV=production node frontend/build.js",
+    "build:watch": "NODE_ENV=development node frontend/build.js --watch",
     "clean": "rm -f frontend/public/css/*.css frontend/public/css/*.css.map frontend/public/js/*.js frontend/public/js/*.js.map",
     "lint": "eslint ."
   },
