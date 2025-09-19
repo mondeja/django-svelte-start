@@ -25,6 +25,8 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "django_browser_reload",
 ]
 
 MIDDLEWARE = [
@@ -35,6 +37,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 ROOT_URLCONF = "backend.urls"
@@ -102,3 +105,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+# Static files (needed for django_browser_reload)
+STATIC_URL = "/static/"

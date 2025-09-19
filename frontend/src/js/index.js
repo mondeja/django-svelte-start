@@ -1,7 +1,7 @@
 import "normalize.css";
 import "./../css/index.css";
 
-import App from "./index.svelte";
+import App from "./App.svelte";
 
 const app = new App({
   target: document.body,

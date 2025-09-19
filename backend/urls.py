@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.contrib import admin
-from django.urls import path, re_path
+from django.urls import include, path, re_path
 from django.views.generic import TemplateView
 from django.views.static import serve
 
@@ -41,4 +41,6 @@ urlpatterns = [
             "document_root": settings.BASE_DIR / "frontend" / "public" / "img",
         },
     ),
+    # Django browser reload
+    path("__reload__/", include("django_browser_reload.urls")),
 ]

@@ -17,17 +17,15 @@ repos:
           - --cache
           - --cache-location=.prettier-cache
           - --ignore-path=.gitignore
-  - repo: https://github.com/eslint/eslint
-    rev: v9.35.0
+  - repo: local
     hooks:
       - id: eslint
-        args:
-          - --fix
-        additional_dependencies:
-          - '@eslint/compat@^1.2.5'
-          - '@eslint/js@^9.22'
-          - eslint-plugin-svelte@^3
-          - globals@^16
+        name: eslint
+        entry: npm run lint:fix
+        language: system
+        types_or:
+          - javascript
+          - svelte
   - repo: meta
     hooks:
       - id: check-hooks-apply

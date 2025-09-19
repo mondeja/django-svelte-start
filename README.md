@@ -31,14 +31,14 @@ python3 manage.py migrate
 Open two terminals and run these commands (one in each terminal):
 
 ```sh
-npm run build:watch
+npm run watch
 ```
 
 ```sh
 python3 manage.py runserver
 ```
 
-Then go to [http://127.0.0.1:8000](http://127.0.0.1:8000/) on your browser.
+Then go to <http://127.0.0.1:8000> on your browser.
 
 ## Linting and formatting
 
