@@ -1,6 +1,6 @@
 from django.conf import settings
 from django.contrib import admin
-from django.urls import path, re_path
+from django.urls import include, path, re_path
 from django.views.generic import TemplateView
 from django.views.static import serve
 
@@ -15,34 +15,32 @@ urlpatterns = [
         ),
         name="home",
     ),
-
     # Admin
     path("admin/", admin.site.urls),
-
     # Stylesheets
     re_path(
         r"^css/(?P<path>.*)$",
         serve,
         {
-            "document_root": settings.BASE_DIR / "frontend" / "dist" / "css",
+            "document_root": settings.BASE_DIR / "frontend" / "public" / "css",
         },
     ),
-
     # Javascripts
     re_path(
         r"^js/(?P<path>.*)$",
         serve,
         {
-            "document_root": settings.BASE_DIR / "frontend" / "dist" / "js",
+            "document_root": settings.BASE_DIR / "frontend" / "public" / "js",
         },
     ),
-
     # Images
     re_path(
         r"^img/(?P<path>.*)$",
         serve,
         {
-            "document_root": settings.BASE_DIR / "frontend" / "dist" / "img",
+            "document_root": settings.BASE_DIR / "frontend" / "public" / "img",
         },
     ),
+    # Django browser reload
+    path("__reload__/", include("django_browser_reload.urls")),
 ]
