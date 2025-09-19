@@ -23,6 +23,11 @@ repos:
       - id: eslint
         args:
           - --fix
+        additional_dependencies:
+          - '@eslint/compat@^1.2.5'
+          - '@eslint/js@^9.22'
+          - eslint-plugin-svelte@^3
+          - globals@^16
   - repo: meta
     hooks:
       - id: check-hooks-apply
