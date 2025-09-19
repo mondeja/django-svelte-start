@@ -11,10 +11,10 @@ jobs:
   prek:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
           node-version-file: .nvmrc
       - name: Install dependencies
         run: npm ci
-      - uses: actions/checkout@v5
       - uses: j178/prek-action@v1
