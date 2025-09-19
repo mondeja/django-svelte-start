@@ -4,26 +4,25 @@
 
 Create a virtual environment and activate it:
 
-```bash
+```sh
 python3 -m virtualenv venv && . venv/bin/activate
 ```
 
 Install Python development requirements:
 
-```bash
-python3 -m pip install . pre-commit
-pre-commit install
+```sh
+python3 -m pip install . prek && prek install
 ```
 
 Install NodeJS requirements:
 
-```bash
+```sh
 npm install
 ```
 
 Process initial migrations:
 
-```bash
+```sh
 python3 manage.py migrate
 ```
 
@@ -40,3 +39,9 @@ python3 manage.py runserver
 ```
 
 Then go to [http://127.0.0.1:8000](http://127.0.0.1:8000/) on your browser.
+
+## Linting and formatting
+
+```sh
+prek run -a
+```

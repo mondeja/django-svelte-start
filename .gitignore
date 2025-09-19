@@ -6,7 +6,8 @@ node_modules/
 *.egg-info
 venv/
 .ruff_cache/
-/frontend/dist/js/*
-/frontend/dist/css/*
-!/frontend/dist/js/.keep
-!/frontend/dist/css/.keep
+/frontend/public/js/*
+/frontend/public/css/*
+!/frontend/public/js/.keep
+!/frontend/public/css/.keep
+.prettier-cache

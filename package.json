@@ -5,12 +5,11 @@
   "main": "frontend/src/js/index.js",
   "type": "module",
   "scripts": {
-    "build": "NODE_ENV=development webpack",
-    "build:prod": "NODE_ENV=production webpack",
-    "build:watch": "npm run build -- --watch",
-    "clean": "rm -f frontend/dist/css/*.css frontend/dist/css/*.css.map frontend/dist/js/*.js frontend/dist/js/*.js.map",
-    "lint": "eslint frontend/src webpack.config.js postcss.config.js",
-    "lint:fix": "npm run lint -- --fix"
+    "build": "NODE_ENV=development node build.js",
+    "build:prod": "NODE_ENV=production node build.js",
+    "build:watch": "NODE_ENV=development node build.js --watch",
+    "clean": "rm -f frontend/public/css/*.css frontend/public/css/*.css.map frontend/public/js/*.js frontend/public/js/*.js.map",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -24,17 +23,15 @@
   },
   "homepage": "https://github.com/mondeja/django-svelte-start#readme",
   "devDependencies": {
-    "autoprefixer": "10.4.18",
-    "css-loader": "6.10.0",
-    "eslint": "8.57.0",
-    "mini-css-extract-plugin": "2.8.1",
+    "@eslint/compat": "^1.2.5",
+    "@eslint/js": "^9.22.0",
+    "@types/node": "^24",
+    "esbuild": "^0.25.10",
+    "esbuild-svelte": "^0.9.3",
+    "eslint": "^9.35.0",
+    "eslint-plugin-svelte": "^3.0.0",
+    "globals": "^16.0.0",
     "normalize.css": "8.0.1",
-    "postcss-loader": "8.1.1",
-    "postcss-normalize": "10.0.1",
-    "postcss-preset-env": "9.5.0",
-    "svelte": "4.2.19",
-    "svelte-loader": "3.1.9",
-    "webpack": "5.97.1",
-    "webpack-cli": "5.1.4"
+    "svelte": "^4"
   }
 }

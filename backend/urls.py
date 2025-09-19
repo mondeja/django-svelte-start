@@ -15,34 +15,30 @@ urlpatterns = [
         ),
         name="home",
     ),
-
     # Admin
     path("admin/", admin.site.urls),
-
     # Stylesheets
     re_path(
         r"^css/(?P<path>.*)$",
         serve,
         {
-            "document_root": settings.BASE_DIR / "frontend" / "dist" / "css",
+            "document_root": settings.BASE_DIR / "frontend" / "public" / "css",
         },
     ),
-
     # Javascripts
     re_path(
         r"^js/(?P<path>.*)$",
         serve,
         {
-            "document_root": settings.BASE_DIR / "frontend" / "dist" / "js",
+            "document_root": settings.BASE_DIR / "frontend" / "public" / "js",
         },
     ),
-
     # Images
     re_path(
         r"^img/(?P<path>.*)$",
         serve,
         {
-            "document_root": settings.BASE_DIR / "frontend" / "dist" / "img",
+            "document_root": settings.BASE_DIR / "frontend" / "public" / "img",
         },
     ),
 ]
