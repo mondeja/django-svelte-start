@@ -32,6 +32,6 @@
     "eslint-plugin-svelte": "^3.12.3",
     "globals": "^16.4.0",
     "normalize.css": "8.0.1",
-    "svelte": "^4"
+    "svelte": "^5"
   }
 }
